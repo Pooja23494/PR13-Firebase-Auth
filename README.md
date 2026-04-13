@@ -1,16 +1,164 @@
-# React + Vite
+# 🔐 Firebase Authentication (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **Firebase Authentication system** built using **React (Vite)**. It includes user authentication with Email/Password and Google Sign-In, along with Firebase Hosting deployment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Live Demo
 
-## React Compiler
+👉 https://fir-auth-93684.firebaseapp.com/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✅ Sign Up with Email & Password
+✅ Login with Email & Password
+✅ Google Sign-In Authentication
+✅ User Logout (Sign Out)
+✅ Real-time Auth State Handling
+✅ Deployed with Firebase Hosting
+
+---
+
+## 🛠️ Tech Stack
+
+* ⚛️ React (Vite)
+* 🔥 Firebase Authentication
+* 🌐 Firebase Hosting
+* 🎨 Bootstrap 
+
+---
+
+## 📂 Project Structure
+
+```bash
+PR13-Firebase-Auth/
+│── public/
+│── src/
+│   ├── components/
+│   ├── firebase.js
+│   ├── App.jsx
+│   └── main.jsx
+│── .firebaserc
+│── firebase.json
+│── package.json
+```
+
+---
+
+## ⚙️ Getting Started
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone https://github.com/Pooja23494/PR13-Firebase-Auth.git
+cd PR13-Firebase-Auth
+```
+
+---
+
+### 2️⃣ Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+### 3️⃣ Run Development Server
+
+```bash
+npm run dev
+```
+
+## 🔥 Firebase Setup
+
+1. Go to Firebase Console
+
+2. Create a project
+
+3. Enable Authentication:
+
+   * Email/Password
+   * Google Sign-In
+
+4. Create `src/firebase.js`:
+
+```javascript
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  appId: "YOUR_APP_ID",
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+```
+---
+
+## 🌐 Firebase Hosting (Vite Build)
+
+### Build Project
+
+```bash
+npm run build
+```
+
+---
+
+### Firebase Init
+
+```bash
+firebase login
+firebase init
+```
+
+👉 Select:
+
+* Hosting
+* Choose existing project
+* Set **dist** as public directory
+* Configure as **Single Page App (SPA): Yes**
+
+---
+
+### Deploy
+
+```bash
+firebase deploy
+```
+
+---
+
+## 📸 Screenshots
+
+*Add screenshots of:*
+
+* Signup Page
+![alt text](<Screenshot 2026-04-13 195457.png>)
+
+* Login Page
+![alt text](<Screenshot 2026-04-13 195443.png>)
+
+* Google Sign-In
+![alt text](<Screenshot 2026-04-13 195546.png>)
+
+* Dashboard
+![alt text](<Screenshot 2026-04-13 195611.png>)
+
+---
+
+## 📌 Author
+
+**Pooja Patel**
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
