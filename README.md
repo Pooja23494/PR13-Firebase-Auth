@@ -12,12 +12,12 @@ This project is a **Firebase Authentication system** built using **React (Vite)*
 
 ## 🚀 Features
 
-✅ Sign Up with Email & Password
-✅ Login with Email & Password
-✅ Google Sign-In Authentication
-✅ User Logout (Sign Out)
-✅ Real-time Auth State Handling
-✅ Deployed with Firebase Hosting
+* ✅ Sign Up with Email & Password
+* ✅ Login with Email & Password
+* ✅ Google Sign-In Authentication
+* ✅ User Logout (Sign Out)
+* ✅ Real-time Auth State Handling
+* ✅ Deployed with Firebase Hosting
 
 ---
 
