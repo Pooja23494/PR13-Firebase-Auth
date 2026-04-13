@@ -137,8 +137,6 @@ firebase deploy
 
 ## 📸 Screenshots
 
-*Add screenshots of:*
-
 * Signup Page
 ![alt text](<Screenshot 2026-04-13 195457.png>)
 
